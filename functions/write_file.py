@@ -1,10 +1,10 @@
 import os
 import google.genai.types as types
 
-def write_file(workin_directory, file_path, content):
+def write_file(working_directory, file_path, content):
     try:
-        full_path = os.path.join(workin_directory, file_path)
-        abs_working_dir = os.path.abspath(workin_directory)
+        full_path = os.path.join(working_directory, file_path)
+        abs_working_dir = os.path.abspath(working_directory)
         abs_target_path = os.path.abspath(full_path)
 
         if not abs_target_path.startswith(abs_working_dir):
